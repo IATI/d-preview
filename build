@@ -1,5 +1,9 @@
 cd `dirname $0`
 
+source dportal/nvm-install
+dportal/npm-install
+
+
 dportal/ctrack/build $@ &&
 dportal/dflat/build $@ &&
 plated/build $@
